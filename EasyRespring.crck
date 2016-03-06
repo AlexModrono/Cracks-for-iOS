@@ -1,0 +1,13 @@
+@run
+#import "App.crck"                     
+  @cmd.su.p-alpine      
+//Root account password. This is needed for doing changes into the device.           
+ @cd /var/mobile                       
+ @cmd.root./HomeDomain/Preferences/com.apple.springboard.addkey                
+ @cmd.root.key = <key>SBKillableInAppSwitcher<key/>                       
+ var "limituses" = 1                        
+ //This will create a variable.
+    If "var_limituses" = "1" Then                    
+     Use2.Close
+ //This will do that, when someone runs the crack again, it will close and don't do any changes.            
+@end
