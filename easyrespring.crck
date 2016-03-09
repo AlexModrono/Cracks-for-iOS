@@ -1,0 +1,7 @@
+@run
+ #import "como.apple.cmd"
+ @cmd.su.p-alpine
+ @cmd.root.md"com.apple.springboard"
+  @cmd.root.addtext= "<key>SBKillableInAppSwitcher<key/>
+ @respring_com.apple.system
+@end
